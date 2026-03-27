@@ -5,16 +5,13 @@
 #
 # Note: if you want to stage/commit WP core files
 # you can delete this whole section/until Configuration.
-/wp-admin/
 /wp-content/index.php
-/wp-content/languages
 /wp-content/plugins/index.php
 /wp-content/themes/index.php
-/wp-includes/
 /index.php
 /license.txt
 /readme.html
-/wp-*.php
+/wp-config.php
 /xmlrpc.php
 
 # Configuration
@@ -34,6 +31,33 @@ wp-config.php
 
 # htaccess
 /.htaccess
+
+
+# Others
+.idea/workspace.xml
+.idea/*
+.idea
+.idea/vcs.xml
+.idea/modules.xml
+.idea/maximarkets.site.iml
+*.zip
+*.rar
+*.gz
+*.sql
+*.tar
+/wp-content/themes/twenty*
+!/wp-content/themes/twentytwentyone
+/wp-content/plugins/wp-file-manager
+web.config
+wp-content/backup-db/
+wp-content/backups/
+wp-content/cache/
+wp-content/upgrade/
+.tmb
+**/node_modules/
+wp-cli.phar
+/local-xdebuginfo.php
+.vscode
 
 # All plugins
 #
