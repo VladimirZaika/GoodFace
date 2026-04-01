@@ -1,0 +1,116 @@
+@use "../global/variables" as *;
+@use "../global/functions" as *;
+@use "../global/mixins" as *;
+@use "sass:math";
+
+.related-articles {
+    width: calc(100% + rem(4));
+    margin-top: rem(32);
+    overflow: hidden;
+    padding: rem(2);
+    margin-left: rem(-2);
+
+    .swiper-wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+
+        @media screen and (min-width: $tablet-landscape) {
+            margin-left: 0;
+            flex-direction: column;
+            gap: rem(16);
+        }
+    }
+
+    .swiper-pagination {
+        @include flex_center;
+        width: 100%;
+        margin-top: rem(24);
+        gap: rem(12);
+
+        @media screen and (min-width: $tablet-landscape) {
+            display: none;
+        }
+    }
+
+    .swiper-pagination-bullet {
+        display: block;
+        width: rem(8);
+        height: rem(8);
+        border-radius: 50%;
+        background-color: var(--optional-6-color);
+        transition: all 0.3s linear;
+
+        &.active {
+            background-color: var(--white-color);
+        }
+    }
+
+    &[data-desk-slider="1"] {
+        .swiper-wrapper {
+            @media screen and (min-width: $tablet-landscape) {
+                flex-direction: row;
+                gap: unset;
+            }
+        }
+
+        .swiper-pagination {
+            @media screen and (min-width: $tablet-landscape) {
+                display: flex;
+            }
+        }
+
+        .post-card {
+            height: auto;
+        }
+    }
+}
+
+
+.related-articles-wrapper {
+    width: 100%;
+
+    .title-wrapper {
+        h5 {
+            margin-bottom: 0;
+            font-size: rem(24);
+        }
+    }
+}
+
+.post-card {
+    &.related-article-card {
+        padding: rem(16);
+        border-radius: rem(16);
+        height: auto;
+        justify-content: space-between;
+
+        .title-wrapper,
+        .btn-wrapper {
+            margin: 0;
+        }
+
+        .articles-wrapper-title {
+            font-size: rem(16);
+        }
+
+        h5 {
+            margin: 0;
+        }
+
+        .info-wrapper {
+            & > * {
+                margin-top: 0;
+            }
+        }
+
+        .counts-wrapper {
+            & > * {
+                color: inherit;
+                font-size: inherit;
+                line-height: inherit;
+                font-weight: inherit;
+            }
+        }
+    }
+}

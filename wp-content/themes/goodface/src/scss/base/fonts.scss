@@ -1,0 +1,97 @@
+@use "sass:math";
+
+@font-face {
+	font-display: swap;
+	font-family: 'Supply';
+	font-style: normal;
+	font-weight: 300;
+	src: url('/wp-content/themes/goodface/fonts/Supply/SupplyMono-Ultralight.woff2') format('woff2'),
+		url('/wp-content/themes/goodface/fonts/Supply/SupplyMono-Ultralight.woff') format('woff'),
+		url('/wp-content/themes/goodface/fonts/Supply/SupplyMono-Ultralight.eot') format('embedded-opentype'),
+		url('/wp-content/themes/goodface/fonts/Supply/SupplyMono-Ultralight.ttf') format('truetype'),
+		url('/wp-content/themes/goodface/fonts/Supply/SupplyMono-Ultralight.otf') format('opentype');
+}
+
+@font-face {
+	font-display: swap;
+	font-family: 'Supply';
+	font-style: normal;
+	font-weight: 300;
+	src: url('/wp-content/themes/goodface/fonts/Supply/SupplySans-Ultralight.woff2') format('woff2'),
+		url('/wp-content/themes/goodface/fonts/Supply/SupplySans-Ultralight.woff') format('woff'),
+		url('/wp-content/themes/goodface/fonts/Supply/SupplySans-Ultralight.eot') format('embedded-opentype'),
+		url('/wp-content/themes/goodface/fonts/Supply/SupplySans-Ultralight.ttf') format('truetype'),
+		url('/wp-content/themes/goodface/fonts/Supply/SupplySans-Ultralight.otf') format('opentype');
+}
+
+@font-face {
+	font-display: swap;
+	font-family: 'Supply';
+	font-style: normal;
+	font-weight: 400;
+	src: url('/wp-content/themes/goodface/fonts/Supply/SupplySans-Regular.woff2') format('woff2'),
+		url('/wp-content/themes/goodface/fonts/Supply/SupplySans-Regular.woff') format('woff'),
+		url('/wp-content/themes/goodface/fonts/Supply/SupplySans-Regular.eot') format('embedded-opentype'),
+		url('/wp-content/themes/goodface/fonts/Supply/SupplySans-Regular.ttf') format('truetype'),
+		url('/wp-content/themes/goodface/fonts/Supply/SupplySans-Regular.otf') format('opentype');
+}
+
+@font-face {
+	font-display: swap;
+	font-family: 'Supply';
+	font-style: normal;
+	font-weight: 400;
+	src: url('/wp-content/themes/goodface/fonts/Supply/SupplyMono-Regular.woff2') format('woff2'),
+		url('/wp-content/themes/goodface/fonts/Supply/SupplyMono-Regular.woff') format('woff'),
+		url('/wp-content/themes/goodface/fonts/Supply/SupplyMono-Regular.eot') format('embedded-opentype'),
+		url('/wp-content/themes/goodface/fonts/Supply/SupplyMono-Regular.ttf') format('truetype'),
+		url('/wp-content/themes/goodface/fonts/Supply/SupplyMono-Regular.otf') format('opentype');
+}
+
+@font-face {
+	font-display: swap;
+	font-family: 'IBM';
+	font-style: normal;
+	font-weight: 400;
+	src: url('/wp-content/themes/goodface/fonts/IBM/IBM-Regular.woff2') format('woff2'),
+		url('/wp-content/themes/goodface/fonts/IBM/IBM-Regular.woff') format('woff'),
+		url('/wp-content/themes/goodface/fonts/IBM/IBM-Regular.eot') format('embedded-opentype'),
+		url('/wp-content/themes/goodface/fonts/IBM/IBM-Regular.ttf') format('truetype'),
+		url('/wp-content/themes/goodface/fonts/IBM/IBM-Regular.otf') format('opentype');
+}
+
+@font-face {
+	font-display: swap;
+	font-family: 'IBM';
+	font-style: normal;
+	font-weight: 500;
+	src: url('/wp-content/themes/goodface/fonts/IBM/IBM-Medium.woff2') format('woff2'),
+		url('/wp-content/themes/goodface/fonts/IBM/IBM-Medium.woff') format('woff'),
+		url('/wp-content/themes/goodface/fonts/IBM/IBM-Medium.eot') format('embedded-opentype'),
+		url('/wp-content/themes/goodface/fonts/IBM/IBM-Medium.ttf') format('truetype'),
+		url('/wp-content/themes/goodface/fonts/IBM/IBM-Medium.otf') format('opentype');
+}
+
+@font-face {
+	font-display: swap;
+	font-family: 'IBM';
+	font-style: normal;
+	font-weight: 500;
+	src: url('/wp-content/themes/goodface/fonts/IBM/IBM-SemiBold.woff2') format('woff2'),
+		url('/wp-content/themes/goodface/fonts/IBM/IBM-SemiBold.woff') format('woff'),
+		url('/wp-content/themes/goodface/fonts/IBM/IBM-SemiBold.eot') format('embedded-opentype'),
+		url('/wp-content/themes/goodface/fonts/IBM/IBM-SemiBold.ttf') format('truetype'),
+		url('/wp-content/themes/goodface/fonts/IBM/IBM-SemiBold.otf') format('opentype');
+}
+
+@font-face {
+	font-display: swap;
+	font-family: 'IBM';
+	font-style: normal;
+	font-weight: 500;
+	src: url('/wp-content/themes/goodface/fonts/IBM/Bold.woff2') format('woff2'),
+		url('/wp-content/themes/goodface/fonts/IBM/Bold.woff') format('woff'),
+		url('/wp-content/themes/goodface/fonts/IBM/Bold.eot') format('embedded-opentype'),
+		url('/wp-content/themes/goodface/fonts/IBM/Bold.ttf') format('truetype'),
+		url('/wp-content/themes/goodface/fonts/IBM/Bold.otf') format('opentype');
+}
