@@ -56,7 +56,7 @@ function goodface_dynamic_styles() {
     wp_localize_script( 'goodface-scripts', 'wpData', $wpData );
     
     $white = get_theme_mod('primary_color', '#FFFFFF');
-    $black = get_theme_mod('secondary_color', '#B4BEFF');
+    $black = get_theme_mod('secondary_color', '#000000');
     $grey = get_theme_mod('optional_color_1', '#2F2F2F');
     $dark = get_theme_mod('optional_color_2', '#181818');
     $yellow = get_theme_mod('optional_color_3', '#FED543');
@@ -77,15 +77,15 @@ function goodface_dynamic_styles() {
             --black-color-60 rgba(" . hexToRgb($black) . ", 0.6);
             --black-color-30 rgba(" . hexToRgb($black) . ", 0.3);
 
-            --text-color: $grey;
+            --optional-color-1: $grey;
 
-            --body-color: $dark;
+            --optional-color-2: $dark;
             
-            --error-color: $yellow;
+            --optional-color-3: $yellow;
 
-            --green-color: $blue;
+            --optional-color-4: $blue;
 
-            --optional-1-color: $darkblue;
+            --optional-color-5: $darkblue;
         }";
 
     wp_add_inline_style( 'goodface-variables', $customCss );

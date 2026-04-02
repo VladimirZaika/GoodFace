@@ -56,7 +56,7 @@
 
         &:hover,
         &:focus {
-            color: var(--text-color);
+            color: var(--white-color);
             text-decoration: underline;
         }
     }
@@ -131,7 +131,7 @@
     li,
     blockquote {
         font-size: rem(14);
-        color: var(--text-color-75);
+        color: var(--white-color-75);
 
         @media screen and (min-width: $tablet) {
             font-size: rem(16);

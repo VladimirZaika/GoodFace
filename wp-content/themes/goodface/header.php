@@ -16,10 +16,6 @@ $insertAfterBodyCode = get_field('insert_after_body_code', 'options');
 
 $background = false;
 
-$logoText = get_field('header_logo_text', 'options');
-
-$customNav = false;
-
 if ( is_page() && has_post_thumbnail() ):
     $bg = 'background-image: url(' . get_the_post_thumbnail_url(null, 'full') . ');';
     $background = ' style="' . $bg . '"';
@@ -60,17 +56,7 @@ endif;
 	>
 
 		<header class="header">
-			<div class="header-container container">
-				<div class="logo header-logo">
-					<?php get_template_part( 'components/logo' );
-
-					if ( !empty($logoText) ): ?>
-						<div class="after-logo">
-							<span><?= $logoText; ?></span>
-						</div>
-					<?php endif; ?>
-				</div>
-				
+			<div class="header-container container">				
 				<div class="header-menu-wrapper">
 					<div class="header-menu menu menu-body">
 						<div class="mobile-menu-wrapper">

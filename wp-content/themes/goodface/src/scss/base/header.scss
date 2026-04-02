@@ -47,96 +47,8 @@
 		justify-content: space-between;
 	}
 
-	&-logo {
-		z-index: 10;
-		display: flex;
-		align-items: center;
-	}
-
 	&-link {
 		margin-left: rem(16);
-		margin-right: rem(6);
-
-		@media screen and (min-width: $tablet) {
-			margin-right: rem(16);
-		}
-
-		@media screen and (min-width: $tablet-landscape) {
-			margin-left: rem(40);
-			margin-right: 0;
-		}
-
-		.button {
-			padding: rem(8) rem(24);
-			min-height: rem(36);
-			font-size: rem(14);
-			font-weight: 400;
-
-			@media screen and (min-width: $tablet-landscape) {
-				padding: rem(15) rem(32);
-				min-height: rem(48);
-				font-size: rem(16);
-				font-weight: 600;
-			}
-		}
-	}
-
-	&-menu {
-		position: fixed;
-		top: 0;
-		right: 0;
-		transform: translateX(-100%);
-
-		@media screen and (min-width: $tablet-landscape) {
-			position: static;
-			top: unset;
-			right: unset;
-			transform: none;
-		}
-
-		&-wrapper {
-			display: flex;
-			align-items: center;
-			margin-left: auto;
-		}
-
-		&-button {
-			padding: rem(12.5) rem(9);
-
-			@media screen and (min-width: $tablet-landscape) {
-				display: none;
-			}
-		}
-	}
-
-	.after-logo {
-		display: none;
-		padding-left: rem(16);
-		margin-left: rem(12);
-		position: relative;
-
-		@media screen and (min-width: $laptop-mini) {
-			display: block;
-		}
-
-		&:before {
-			content: '';
-			position: absolute;
-			left: 0;
-			top: 50%;
-			transform: translateY(-50%);
-			width: rem(4);
-			height: rem(4);
-			border-radius: 50%;
-			background-color: var(--text-color);
-		}
-
-		span {
-			font-family: 'Supply', sans-serif;
-			font-size: rem(16);
-			display: inline-block;
-			padding-top: rem(6);
-		}
 	}
 
 	.nav-mobile-wrapper {
@@ -201,7 +113,7 @@
 				a {
 					font-family: 'Inter', sans-serif;
 					font-size: rem(16);
-					color: var(--text-color);
+					color: var(--white-color);
 
 					&:hover,
 					&:focus {
@@ -280,7 +192,7 @@
 
 					&.current-menu-item,
 					&:hover {
-						background-color: var(--text-color-5);
+						background-color: var(--white-color-5);
 					}
 
 					a {
@@ -304,7 +216,7 @@
 					height: 0;
 					border-left: rem(7) solid transparent;
 					border-right: rem(7) solid transparent;
-					border-top: rem(7) solid var(--text-color);
+					border-top: rem(7) solid var(--white-color);
 					transition: all 0.3s linear;
 					position: absolute;
 					right: 0;
@@ -330,7 +242,7 @@
 							max-height: rem(700);
 
 							@media screen and (min-width: $tablet-landscape) {
-								box-shadow: 0 rem(8) rem(16) var(--text-color-7);
+								box-shadow: 0 rem(8) rem(16) var(--white-color-7);
 							}
 						}
 					}
@@ -350,96 +262,9 @@
 						max-height: rem(700);
 
 						@media screen and (min-width: $tablet-landscape) {
-							box-shadow: 0 rem(8) rem(16) var(--text-color-7);
+							box-shadow: 0 rem(8) rem(16) var(--white-color-7);
 						}
 					}
-				}
-			}
-		}
-	}
-}
-
-
-/* Burger
---------------------------------------------- */
-.icon-menu {
-	display: block;
-	flex: 0 0 rem(30);
-	height: rem(12);
-	position: relative;
-	width: rem(18);
-	z-index: 10;
-
-	@media (any-hover: none) {
-		cursor: default;
-	}
-
-	span,
-	&::before,
-	&::after {
-		background-color: var(--text-color);
-		border-radius: rem(5);
-		content: "";
-		height: rem(2);
-		position: absolute;
-		right: 0;
-		transition: all 0.3s ease 0s;
-		width: 100%;
-	}
-
-	&::before {
-		top: 0;
-	}
-
-	&::after {
-		bottom: 0;
-		right: unset;
-		left: 0;
-	}
-
-	span {
-		top: calc(50% - rem(0.9));
-	}
-
-	.menu-open & {
-		&::before,
-		&::after {
-			z-index: 10;
-			width: 50%;
-		}
-	}
-}
-
-.mobile {
-	&-menu {
-		&-wrapper {
-			display: flex;
-			width: 100%;
-			height: 100%;
-			flex-direction: column;
-			justify-content: space-between;
-			align-items: flex-start;
-
-			@media screen and (min-width: $tablet-landscape) {
-				width: auto;
-				height: auto;
-				flex-direction: unset;
-				justify-content: unset;
-				align-items: unset;
-				display: block;
-			}
-
-			.btn-wrapper {
-				@include flex_center;
-				width: 100%;
-				margin-top: rem(32);
-
-				@media screen and (min-width: $tablet-landscape) {
-					display: none;
-				}
-
-				.button {
-					width: 100%;
 				}
 			}
 		}

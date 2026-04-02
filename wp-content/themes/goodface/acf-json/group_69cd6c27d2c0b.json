@@ -1,13 +1,13 @@
 {
-    "key": "group_6747aa061cdc9",
-    "title": "[OPTIONS]: Footer",
+    "key": "group_69cd6c27d2c0b",
+    "title": "[OPTIONS]: Header",
     "fields": [
         {
-            "key": "field_6747aa060b617",
-            "label": "After Footer Markup",
-            "name": "insert_after_footer_code",
+            "key": "field_684c32ce5599a",
+            "label": "Registration Link",
+            "name": "register_link",
             "aria-label": "",
-            "type": "textarea",
+            "type": "link",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -16,11 +16,8 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "maxlength": "",
-            "rows": "",
-            "placeholder": "",
-            "new_lines": ""
+            "return_format": "array",
+            "allow_in_bindings": 0
         }
     ],
     "location": [
@@ -28,7 +25,7 @@
             {
                 "param": "options_page",
                 "operator": "==",
-                "value": "acf-options-footer"
+                "value": "acf-options-header"
             }
         ]
     ],
@@ -42,5 +39,5 @@
     "description": "",
     "show_in_rest": 0,
     "display_title": "",
-    "modified": 1775070216
+    "modified": 1775070270
 }

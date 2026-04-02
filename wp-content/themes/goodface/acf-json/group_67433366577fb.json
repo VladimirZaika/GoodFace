@@ -3,41 +3,6 @@
     "title": "[OPTIONS]: General",
     "fields": [
         {
-            "key": "field_684c323a40bf4",
-            "label": "General",
-            "name": "",
-            "aria-label": "",
-            "type": "tab",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "placement": "top",
-            "endpoint": 0,
-            "selected": 0
-        },
-        {
-            "key": "field_684c32ce5599a",
-            "label": "Registration Link",
-            "name": "register_link",
-            "aria-label": "",
-            "type": "link",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "50",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "array",
-            "allow_in_bindings": 0
-        },
-        {
             "key": "field_687e0bff509a8",
             "label": "Blog Archive",
             "name": "",
@@ -388,24 +353,6 @@
             "placeholder": "",
             "prepend": "",
             "append": ""
-        },
-        {
-            "key": "field_6979fb3c234ec",
-            "label": "Custom Link Tags",
-            "name": "",
-            "aria-label": "",
-            "type": "tab",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "placement": "top",
-            "endpoint": 0,
-            "selected": 0
         }
     ],
     "location": [
@@ -413,7 +360,7 @@
             {
                 "param": "options_page",
                 "operator": "==",
-                "value": ""
+                "value": "theme-general-settings"
             }
         ]
     ],
@@ -427,5 +374,5 @@
     "description": "",
     "show_in_rest": 0,
     "display_title": "",
-    "modified": 1775063300
+    "modified": 1775070303
 }
